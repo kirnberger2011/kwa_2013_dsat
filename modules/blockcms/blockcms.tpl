@@ -22,6 +22,7 @@ href="{$link->getCmsLink('1')}" replace 1 by id of cms page you want to link.
 
 <!----------- First Block ------------>
 
+<!----- deactivate ---------
 <div id="block_various_links_footer" class="block_various_links">
 		<h4>Footer Block 01</h4>
 		<ul>
@@ -41,11 +42,11 @@ href="{$link->getCmsLink('1')}" replace 1 by id of cms page you want to link.
 		</ul>
 
 	</div>
-
+---------- End --------->
 <!------ End --------->
 
 <!----------- Second Block ------------>
-
+<!----- deactivate ---------
 <div id="block_various_links_footer" class="block_various_links">
 		<h4>Footer Block 02</h4>
 		<ul>
@@ -70,7 +71,7 @@ href="{$link->getCmsLink('1')}" replace 1 by id of cms page you want to link.
 
 
 <!----------- Third Block ------------>
-
+<!----- deactivate ---------
 <div id="block_various_links_footer" class="block_various_links">
 		<h4>Footer Block 03</h4>
 		<ul>
@@ -95,7 +96,7 @@ href="{$link->getCmsLink('1')}" replace 1 by id of cms page you want to link.
 
 
 <!----------- Fourth Block ------------>
-
+<!----- deactivate ---------
 <div id="block_various_links_footer" class="block_various_links">
 		<h4>Footer Block 04</h4>
 		<ul>
