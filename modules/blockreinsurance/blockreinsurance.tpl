@@ -19,18 +19,18 @@
 *
 *  @author PrestaShop SA <contact@prestashop.com>
 *  @copyright  2007-2012 PrestaShop SA
-*  @version  Release: $Revision: 7471 $
+*  @version  Release: $Revision: 6594 $
 *  @license    http://opensource.org/licenses/afl-3.0.php  Academic Free License (AFL 3.0)
 *  International Registered Trademark & Property of PrestaShop SA
 *}
-<!-- Block permanent links module HEADER -->
-<ul id="header_links">
-	<li id="header_link_contact"><a href="http://www.dasspielzeug.at/de/content/13-kontakt" title="{l s='contact' mod='blockpermanentlinks'}">{l s='contact' mod='blockpermanentlinks'}</a></li>
-	<li id="header_link_impressum"><a href="{$link->getCMSLink('10','impressum')}" title="{l s='impressum' mod='blockpermanentlinks'}">{l s='Impressum' mod='blockpermanentlinks'}</a></li>
-	<li id="header_link_agb"><a href="{$link->getCMSLink('3','agb')}" title="{l s='agb' mod='blockpermanentlinks'}">{l s='AGB' mod='blockpermanentlinks'}</a></li>
-	
-<!-----	<li id="header_link_bookmark">
-		<script type="text/javascript">writeBookmarkLink('{$come_from}', '{$meta_title|addslashes|addslashes}', '{l s='bookmark' mod='blockpermanentlinks'}');</script>
-	</li> ---->
-</ul>
-<!-- /Block permanent links module HEADER -->
+{if $infos|@count > 0}
+<!-- MODULE Block reinsurance -->
+<div id="reinsurance_block" class="clearfix">
+	<ul class="width{$nbblocks}">	
+		{foreach from=$infos item=info}
+			<li><img src="{$module_dir}img/{$info.file_name}" alt="{$info.text|escape:html:'UTF-8'}" /> <span>{$info.text|escape:html:'UTF-8'}</span></li>
+		{/foreach}
+	</ul>
+</div>
+<!-- /MODULE Block reinsurance -->
+{/if}
